@@ -1,0 +1,57 @@
+.FooterMainContainer {
+    padding: 60px 20px 40px 20px;
+    background-color: rgb(32, 35, 41);
+}
+
+.Circle {
+    margin: 7px 0 0 8px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(52, 202, 52);
+    border-radius: 50%;
+}
+
+.FooterText {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: rgb(158, 158, 158);
+}
+
+.Status {
+    display: flex;
+}
+
+.FooterSocialNetworkContainer {
+    margin: 40px 0 40px 0;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.By {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    color: rgb(255, 152, 0);
+}
+
+.MyName {
+    text-decoration: underline;
+    color: rgb(255, 152, 0);
+}
+
+.MyName:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Github {
+    width: 34px;
+
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+}

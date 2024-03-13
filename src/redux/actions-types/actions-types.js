@@ -1,0 +1,5 @@
+export const ADD_FAVORITE = 'ADD_FAVORITE';
+export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
+export const GET_CHARACTER = 'GET_CHARACTER';
+export const GET_RANDOM = 'GET_RANDOM';
+export const REMOVE_CHARACTER = 'REMOVE_CHARACTER';

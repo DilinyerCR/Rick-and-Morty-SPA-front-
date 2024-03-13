@@ -1,0 +1,174 @@
+.LandingNavContainer {
+    padding: 15px 20px;
+
+    background-color: white;
+    border-bottom: 1px solid rgb(164, 168, 175);
+
+    display: flex;
+    align-items: center;
+}
+
+.AboutButton {
+    border: none;
+    background-color: transparent;
+
+    color: rgb(32, 35, 41);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.AboutButton:hover {
+    cursor: pointer;
+    color: rgb(255, 152, 0);
+}
+
+.LoginButton {
+    padding: 5px 15px;
+
+    background-color: transparent;
+    border: 1px solid rgb(255, 152, 0);
+    border-radius: 12px;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(32, 35, 41);
+}
+
+.LoginButton:hover {
+    background-color: rgb(255, 152, 0);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.ImgContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Logo {
+    width: 48px;
+}
+
+.ButtonsContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.TittleSection {
+    padding: 40px 20px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3.8rem;
+    text-align: center;
+    color: rgb(32, 35, 41);
+}
+
+.MainTittle {
+    line-height: 66px;
+}
+
+
+
+.CardsSection {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.LandingCard {
+    max-width: 350px;
+    max-height: 550px;
+
+    background-color: rgb(60, 62, 68);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.CardImg {
+    width: 100%;
+    height: 280px;
+}
+
+.CardText {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CardName, .CardState, .CardLocation, .CardFirstSeen {
+    color: white;
+}
+
+.CardFirstSeenTitle, .CardLastLocation {
+    color: rgb(158, 158, 158);
+}
+
+
+/* !=========MEDIA QUERIES========= */
+@media screen and (min-width: 768px) {
+    .MainTittle {
+        font-size: 6.5rem;
+    }
+
+    .LandingNavContainer{
+        padding: 15px 35px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .MainTittle {
+        font-size: 9rem;
+        line-height: 100px;
+    }
+
+    .TittleSection {
+        padding: 65px 10px;
+    }
+
+    .LandingNavContainer {
+        border-bottom: none;
+    }
+
+    .CardsSection {
+        padding: 80px 30px;
+    }
+
+    .LandingCard {
+        min-width: 600px;
+        height: 220px;
+
+        display: flex;
+    }
+
+    .CardImg {
+        width: 232px;
+        height: 100%;
+    }
+
+    .CardText {
+        display: flex;
+        justify-content: center;
+    }
+
+    .CardName {
+        font-size: 2.7rem;
+    }
+}
+
+

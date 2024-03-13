@@ -1,0 +1,124 @@
+.NavMainContainer {
+    padding: 15px 20px;
+
+    background-color: white;
+    border-bottom: 1px solid rgb(164, 168, 175);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.NavSectionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.NavButtonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Logo {
+    width: 48px;
+}
+
+.NavAboutButton, .NavFavoritesButton, .NavAllButton {
+    padding: 6px 12px;
+
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(32, 35, 41);
+}
+
+.NavAboutButton:hover, .NavFavoritesButton:hover, .NavAllButton:hover  {
+    cursor: pointer;
+    color: rgb(255, 152, 0);
+    transition: 0.3s;
+}
+
+.NavLogoutImg {
+    margin: 0 0 -5px 5px;
+    width: 22px;
+}
+
+.NavLogoutImg:hover {
+    width: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.RandomAndSearchContainer {
+    display: flex;
+}
+
+
+/* !=========MEDIA QUERIES========= */
+@media screen and (min-width: 768px) {
+
+    .NavButtonsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .NavSectionsContainer {
+        width: 550px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .LinksContainer {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    .NavButtonsContainer {
+        padding: 0 20px;
+    }
+
+    .NavSectionsContainer {
+        width: 650px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .NavAboutButton {
+        margin-right: 20px;
+    }
+
+    .LinksContainer {
+        gap: 30px;
+    }
+
+    .NavAboutButton, .NavFavoritesButton, .NavAllButton  {
+        font-size: 1.9rem;
+    }
+
+    .NavLogoutImg {
+        margin: 0 0 -12px 5px;
+        width: 25px;
+    }
+
+    .NavLogoutImg:hover {
+        width: 26px;
+    }
+}

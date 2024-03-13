@@ -1,0 +1,74 @@
+.SearchForm {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.SearchInput {
+    height: 36px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 18px 0 0 18px;
+    border: 1px solid rgb(255, 152, 0);
+    outline: none;
+}
+
+.InputAndSearchContainer {
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchButton {
+    padding: 6px 10px 6px 6px;
+    height: 36px;
+
+    background-color: transparent;
+    border-top: 1px solid rgb(255, 152, 0);
+    border-right: 1px solid rgb(255, 152, 0);
+    border-bottom: 1px solid rgb(255, 152, 0);
+    border-left: none;
+    border-radius: 0 16px 16px 0;
+    color: rgb(32, 35, 41);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.SearchButton:hover {
+    background-color: rgb(255, 152, 0);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.Random {
+    padding: 5px 10px;
+
+    border-radius: 50%;
+    border: 1px solid rgb(255, 152, 0);
+    font-size: 1.8rem;
+}
+
+.Random:hover {
+    cursor: pointer;
+}
+
+
+/* !=========MEDIA QUERIES========= */
+@media screen and (min-width: 768px) {
+    .SearchInput {
+        width: 180px;
+    }
+
+    .SearchForm {
+        margin-right: 40px;
+    }
+
+    .SearchButton, .SearchInput {
+        height: 40px;
+    }
+}
+
