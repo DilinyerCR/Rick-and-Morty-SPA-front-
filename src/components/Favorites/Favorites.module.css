@@ -2,7 +2,32 @@
     padding: 100px 30px 40px 30px;
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.SelectorsContainer {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* border: 1px solid blue; */
+}
+
+.SelectorsContainer select {
+    padding: 3px;
+}
+
+.FavoritesCardsContainer {
+    padding: 10px 30px;
+
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    /* border: 1px solid green; */
 }

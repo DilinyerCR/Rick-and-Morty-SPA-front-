@@ -59,7 +59,6 @@ const App = () => {
         <Route path='/favorites' element={<Favorites />}/>
 
         <Route path='/detail/:id' element={<Detail />}/>
-
       </Routes>
     </div>
   )

@@ -12,6 +12,7 @@ const Cards = () => {
          {
              allCharacters?.map((character) => {
                  return <Card 
+                 gender={character.gender}
                  key={character.id}
                  id={character.id}
                  image={character.image}

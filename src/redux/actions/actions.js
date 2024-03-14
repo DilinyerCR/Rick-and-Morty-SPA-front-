@@ -1,4 +1,12 @@
-import { ADD_FAVORITE, REMOVE_FAVORITE, GET_CHARACTER, GET_RANDOM, REMOVE_CHARACTER} from '../actions-types/actions-types';
+import { 
+    ADD_FAVORITE,
+    REMOVE_FAVORITE,
+    GET_CHARACTER,
+    GET_RANDOM,
+    REMOVE_CHARACTER,
+    FILTER_BY_GENDER,
+    ORDER_BY_NAME
+} from '../actions-types/actions-types';
 
 export const addFav = (char) => {
     return {
@@ -89,6 +97,20 @@ export const removeCharacter = (id) => {
     return {
         type: REMOVE_CHARACTER,
         payload: id
+    }
+}
+
+export const filterByGender = (gender) => {
+    return {
+        type: FILTER_BY_GENDER,
+        payload: gender
+    }
+}
+
+export const orderByName = (order) => {
+    return {
+        type: ORDER_BY_NAME,
+        payload: order
     }
 }
 
