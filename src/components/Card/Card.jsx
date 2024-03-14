@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom';
 
 
-const Card = ({ id, image, name, status, species, location, origin }) => {
+const Card = ({ id, image, name, status, species, location, origin, gender }) => {
 
   const [isFav, setIsFav] =  useState(false); //Este estado local solo se usa para mostrar un corazon u otro
   const dispatch = useDispatch(); //con el dispatch envio los personajes al estado global "myFavorites[]"
@@ -20,7 +20,7 @@ const Card = ({ id, image, name, status, species, location, origin }) => {
       dispatch(removeFav(id))
     } else {
       setIsFav(true)
-      dispatch(addFav({ id, image, name, status, species, location, origin }))
+      dispatch(addFav({ id, image, name, status, species, location, origin, gender }))
     }
   }
 
@@ -70,6 +70,11 @@ const Card = ({ id, image, name, status, species, location, origin }) => {
                           <h2 className={style.CardName}>{name}</h2>
                         </Link>
                         
+                        <div>
+                            <p className={style.CardGender}>Gender: </p>
+                            <p className={style.Gender}>{gender}</p>
+                        </div>
+
                         {/* <div className={style.CardState}> 
                           <div className={style.CardStateCircle}
                           style={{backgroundColor: status === "Alive" ? "green" : (status === "unknown" ? "white" : "red")}}

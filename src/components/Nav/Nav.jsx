@@ -39,7 +39,7 @@ const Nav = ({ onSearch, logOut }) => {
           </div>
           
           <div className={style.RandomAndSearchContainer}>
-          {pathname !== '/favorites' || pathname !== '/detail' && <SearchBar onSearch={onSearch}/>}
+            {pathname !== '/favorites' && !pathname.startsWith('/detail/') && <SearchBar onSearch={onSearch}/>}
           </div>
 
         </div>

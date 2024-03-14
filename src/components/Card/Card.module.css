@@ -67,3 +67,12 @@
 .FavButton {
     margin: 0 10px;
 }
+
+.CardGender {
+    margin-top: 10px;
+    color: rgb(158, 158, 158)
+}
+
+.Gender {
+    color: white;
+}

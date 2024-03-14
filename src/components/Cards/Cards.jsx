@@ -16,6 +16,7 @@ const Cards = () => {
                  id={character.id}
                  image={character.image}
                  name={character.name}
+                 gender={character.gender}
                  status={character.status}
                  species={character.species}
                  location={character.location}
