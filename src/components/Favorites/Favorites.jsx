@@ -41,7 +41,6 @@ const Favorites = () => {
         {
           myFavorites?.map((fav) => {
             return <Card 
-            gender={fav.gender}
             key={fav.id}
             id={fav.id}
             image={fav.image}
