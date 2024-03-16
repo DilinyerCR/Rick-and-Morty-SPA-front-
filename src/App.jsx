@@ -38,7 +38,7 @@ const App = () => {
 
   // Si no existe access (access === false) llevame a "/"
   useEffect(() => {
-    !access && navigate("https://rick-and-morty-dilinyercr.netlify.app/")
+    !access && navigate("/")
   }, [access])
 
 
